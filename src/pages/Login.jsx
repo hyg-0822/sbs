@@ -227,13 +227,15 @@ function Login() {
   return (
     <>
       <GNB />
-        <div className="login-container">
+        <main className="login-container login-page">
           <div className='login-card'>
             <h1>로그인</h1>
-            <form onSubmit={handleSubmit} className="login-form">
+            <form onSubmit={handleSubmit} className="login-form" noValidate aria-busy={isLoading}>
               <div className="form-group">
                 <input type="email"
                   id="email"
+                  autoComplete="email"
+                  inputMode="email"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -245,6 +247,7 @@ function Login() {
               <div className="form-group">
                 <input type="password"
                   id="password"
+                  autoComplete="current-password"
                   name="password"
                   value={formData.password}
                   onChange={handleChange}
@@ -284,7 +287,7 @@ function Login() {
               </div>
             </form>
           </div>
-        </div>
+        </main>
       <Footer />
     </>
   );
