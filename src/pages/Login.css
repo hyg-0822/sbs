@@ -20,7 +20,7 @@
 /* 로그인 카드 */
 .login-card {
   /* 어두운 회색 배경에 80% 불투명도 (다크 모드) */
-  background: rgba(26, 26, 26, 0.8);
+  background: rgba(26, 26, 26, 0.9);
   /* 뒷배경을 10px만큼 흐리게 처리 (글래스모피즘 효과) */
   backdrop-filter: blur(10px);
   /* 모서리를 16px만큼 둥글게 */
